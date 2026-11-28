@@ -105,6 +105,8 @@ figure .key { margin-bottom: 8px; }
 .digit b { font: 600 15px/1 var(--mono); color: var(--O); }
 .digit b.bad { color: var(--I); }
 table.data td .sub { color: var(--muted); }
+
+.tagline { font: 600 clamp(22px, 3.2vw, 27px)/1.25 var(--read); color: var(--ink); margin: 10px 0 0; }
 </style>
 </head>
 <body>
@@ -113,6 +115,7 @@ table.data td .sub { color: var(--muted); }
   <div class="toprow"><span class="kicker"><span lang="en">Research note · November 2026</span><span lang="zh">研究笔记 · 2026 年 11 月</span></span>
     <span class="langs"><button class="pill" data-set="en">EN</button><button class="pill" data-set="zh">中文</button></span></div>
   <h1>LLM as a GPU</h1>
+  <p class="tagline"><span lang="en">LLMs can run LLMs, from their prompt.</span><span lang="zh">LLM 可以运行 LLM，只靠它的 prompt。</span></p>
   <p lang="en" class="dek">A GPU runs whatever model is loaded into its memory. This transformer does the same with its context: load the weights of GPT-2 XL or TinyLlama-1.1B into it and it runs that model, matching every next token. Its own weights were written by a program that Claude wrote.</p><p lang="zh" class="dek">GPU 会运行装进它显存里的任何模型。这个 transformer 对它的上下文做同样的事：把 GPT-2 XL 或 TinyLlama-1.1B 的权重装进去，它就运行那个模型，每一个下一个 token 都对得上。它自己的权重由 Claude 写的程序直接写出。</p>
   <p class="byline"><span lang="en">Xingyu Dang</span><span lang="zh">党星宇</span> · <a href="exps.html"><span lang="en">experiment log</span><span lang="zh">实验日志</span></a></p>
 </header>
